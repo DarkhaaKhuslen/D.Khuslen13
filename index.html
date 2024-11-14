@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+        <style>
+            body{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100vh;
+                background-color:grey ;
+            }
+            .game{
+                background-color:#CCD1D1;
+                padding:20px;
+                height:300px;
+                width:500px;
+                border: 2px solid black;
+                width: 600px;
+            }
+            .password p{
+                text-align:center;
+            }
+            .invalid{
+                color: red;
+            }
+            i{
+                margin-left: 20px;
+            }
+        </style>
+    <body>
+        <div class="game">
+            <div class="password">
+                <p><b>PASSWORD VALIDATION</b></p>
+                <p class="alert"></p>
+                <input type="password" placeholder="Password" class="passwordInput" >
+                <button>Submit</button> 
+                <br>
+                <div class="li1">
+                    <li class="invalid" id="cH">At least 10 characters Long</li>
+                    <br>
+                    <li class="invalid" id="uP">At least 1 uppercase letter(A,B,...Z)</li>
+                    <br>
+                    <li class="invalid" id="lL">At least 1 lowercase letter(a,b,...z)</li>
+                    
+                    <br>
+                </div>
+                <div class="li">
+                    <li class="invalid" id="num">At least 1 number(0,1,2,.....9)</li>
+                    <br>
+                    <li class="invalid" id="sS">At least 1 special symbol(!,@,...$)
+                </div>
+            </div>
+            <script src="app.js"></script>
+    </body>
+</html>
